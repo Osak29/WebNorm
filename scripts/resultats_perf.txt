@@ -1,0 +1,31 @@
+==== CONFIGURATION DE TEST ====
+Système : Ubuntu 26.04.1 LTS
+Processeur : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+Nombre de cœurs : 8
+RAM : 7.6Gi
+Python : Python 3.14.4
+
+==== VERSION SEQUENTIELLE ====
+Essai 1 : 16.96 s
+Essai 2 : 17.96 s
+Essai 3 : 17.14 s
+
+==== VERSION PARALLELE (1 WORKERS) ====
+Essai 1 : 20.54 s
+Essai 2 : 26.83 s
+Essai 3 : 25.36 s
+
+==== VERSION PARALLELE (2 WORKERS) ====
+Essai 1 : 18.71 s
+Essai 2 : 16.86 s
+Essai 3 : 17.58 s
+
+==== VERSION PARALLELE (4 WORKERS) ====
+Essai 1 : 13.29 s
+Essai 2 : 12.40 s
+Essai 3 : 12.82 s
+
+==== VERSION PARALLELE (8 WORKERS) ====
+Essai 1 : 15.93 s
+Essai 2 : 21.12 s
+Essai 3 : 16.80 s
