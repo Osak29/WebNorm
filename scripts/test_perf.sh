@@ -17,8 +17,7 @@ mesurer() {
     cat /tmp/temps_perf.txt
 }
 
-# Réinitialiser le fichier de résultats
-: > "$RESULTAT"
+
 
 echo "==== CONFIGURATION DE TEST ====" >> "$RESULTAT"
 echo "Système : $systeme" >> "$RESULTAT"
