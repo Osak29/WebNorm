@@ -43,7 +43,7 @@ mkdir -p "$DOSSIER_RES"
 SORTIE="$DOSSIER_RES/controle_$(date +%Y%m%d_%H%M%S).txt"
 DEBUT=$(date +%s)
 
-grep -E "$MOTIF" "$JOURNAL" | cut -d' ' -f1,4,7,9 > "$TMP"
+tr -d '\r' < "$JOURNAL" | grep -E "$MOTIF" | cut -d' ' -f1,4,7,9 > "$TMP"
 # Dans $TMP : champ 1 = IP, 2 = [date:heure..., 3 = page, 4 = code
 
 TOTAL=$(wc -l < "$JOURNAL")
