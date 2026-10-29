@@ -10,3 +10,4 @@ chmod 774 scripts
 chmod 700 archives
 
 echo "Arborescence installée"
+bash verifier_environnement.sh
